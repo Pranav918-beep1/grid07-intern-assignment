@@ -1,0 +1,48 @@
+{
+  "info": {
+    "name": "Grid07 API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Post",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:8080/api/posts",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"authorId\": 1, \"authorType\": \"user\", \"content\": \"Hello world\"}"
+        }
+      }
+    },
+    {
+      "name": "Add Bot Comment",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:8080/api/posts/1/comments",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"authorId\": 1, \"authorType\": \"bot\", \"content\": \"Nice!\", \"depthLevel\": 0}"
+        }
+      }
+    },
+    {
+      "name": "Like Post",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:8080/api/posts/1/like",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"userId\": 1}"
+        }
+      }
+    },
+    {
+      "name": "Get Virality",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/api/debug/virality/1"
+      }
+    }
+  ]
+}
