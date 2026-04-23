@@ -1,7 +1,7 @@
 # Grid07 Intern Assignment
 
 ## Overview
-This project implements a backend system simulating social media interactions between users and bots. It focuses on controlling bot activity, maintaining data integrity under concurrent requests, and tracking engagement through a Redis-based virality scoring system.
+This project implements a backend system simulating social media interactions between users and bots. It focuses on controlling bot activity, maintaining data integrity under concurrent requests, and tracking engagement through a Redis-based virality scoring system.The system is designed to remain consistent under concurrent requests by using Redis for atomic operations.
 
 ## Tech Stack
 - Java (Spring Boot)
